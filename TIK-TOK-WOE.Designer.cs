@@ -33,7 +33,15 @@ namespace TIK_TOK_WOE
             this.panel1 = new System.Windows.Forms.Panel();
             this.textbox_Title = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.button_Box_9 = new System.Windows.Forms.Button();
+            this.button_Box_8 = new System.Windows.Forms.Button();
+            this.button_Box_7 = new System.Windows.Forms.Button();
+            this.button_Box_6 = new System.Windows.Forms.Button();
+            this.button_Box_5 = new System.Windows.Forms.Button();
+            this.button_Box_4 = new System.Windows.Forms.Button();
+            this.button_Box_3 = new System.Windows.Forms.Button();
+            this.button_Box_2 = new System.Windows.Forms.Button();
+            this.button_Box_1 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.player_O_Score = new System.Windows.Forms.Label();
@@ -41,16 +49,8 @@ namespace TIK_TOK_WOE
             this.player_O = new System.Windows.Forms.Label();
             this.player_X = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -84,29 +84,128 @@ namespace TIK_TOK_WOE
             // 
             this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.button9);
-            this.panel2.Controls.Add(this.button8);
-            this.panel2.Controls.Add(this.button7);
-            this.panel2.Controls.Add(this.button6);
-            this.panel2.Controls.Add(this.button5);
-            this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.button_Box_9);
+            this.panel2.Controls.Add(this.button_Box_8);
+            this.panel2.Controls.Add(this.button_Box_7);
+            this.panel2.Controls.Add(this.button_Box_6);
+            this.panel2.Controls.Add(this.button_Box_5);
+            this.panel2.Controls.Add(this.button_Box_4);
+            this.panel2.Controls.Add(this.button_Box_3);
+            this.panel2.Controls.Add(this.button_Box_2);
+            this.panel2.Controls.Add(this.button_Box_1);
             this.panel2.ForeColor = System.Drawing.Color.White;
             this.panel2.Location = new System.Drawing.Point(70, 270);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(560, 560);
             this.panel2.TabIndex = 1;
             // 
-            // button1
+            // button_Box_9
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(170, 170);
-            this.button1.TabIndex = 0;
-            this.button1.UseVisualStyleBackColor = false;
+            this.button_Box_9.BackColor = System.Drawing.Color.White;
+            this.button_Box_9.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold);
+            this.button_Box_9.ForeColor = System.Drawing.Color.Black;
+            this.button_Box_9.Location = new System.Drawing.Point(371, 373);
+            this.button_Box_9.Name = "button_Box_9";
+            this.button_Box_9.Size = new System.Drawing.Size(170, 170);
+            this.button_Box_9.TabIndex = 8;
+            this.button_Box_9.UseVisualStyleBackColor = false;
+            this.button_Box_9.Click += new System.EventHandler(this.button_Box_9_Click);
+            // 
+            // button_Box_8
+            // 
+            this.button_Box_8.BackColor = System.Drawing.Color.White;
+            this.button_Box_8.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold);
+            this.button_Box_8.ForeColor = System.Drawing.Color.Black;
+            this.button_Box_8.Location = new System.Drawing.Point(191, 373);
+            this.button_Box_8.Name = "button_Box_8";
+            this.button_Box_8.Size = new System.Drawing.Size(170, 170);
+            this.button_Box_8.TabIndex = 7;
+            this.button_Box_8.UseVisualStyleBackColor = false;
+            this.button_Box_8.Click += new System.EventHandler(this.button_Box_8_Click);
+            // 
+            // button_Box_7
+            // 
+            this.button_Box_7.BackColor = System.Drawing.Color.White;
+            this.button_Box_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold);
+            this.button_Box_7.ForeColor = System.Drawing.Color.Black;
+            this.button_Box_7.Location = new System.Drawing.Point(12, 373);
+            this.button_Box_7.Name = "button_Box_7";
+            this.button_Box_7.Size = new System.Drawing.Size(170, 170);
+            this.button_Box_7.TabIndex = 6;
+            this.button_Box_7.UseVisualStyleBackColor = false;
+            this.button_Box_7.Click += new System.EventHandler(this.button_Box_7_Click);
+            // 
+            // button_Box_6
+            // 
+            this.button_Box_6.BackColor = System.Drawing.Color.White;
+            this.button_Box_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold);
+            this.button_Box_6.ForeColor = System.Drawing.Color.Black;
+            this.button_Box_6.Location = new System.Drawing.Point(371, 192);
+            this.button_Box_6.Name = "button_Box_6";
+            this.button_Box_6.Size = new System.Drawing.Size(170, 170);
+            this.button_Box_6.TabIndex = 5;
+            this.button_Box_6.UseVisualStyleBackColor = false;
+            this.button_Box_6.Click += new System.EventHandler(this.button_Box_6_Click);
+            // 
+            // button_Box_5
+            // 
+            this.button_Box_5.BackColor = System.Drawing.Color.White;
+            this.button_Box_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold);
+            this.button_Box_5.ForeColor = System.Drawing.Color.Black;
+            this.button_Box_5.Location = new System.Drawing.Point(191, 192);
+            this.button_Box_5.Name = "button_Box_5";
+            this.button_Box_5.Size = new System.Drawing.Size(170, 170);
+            this.button_Box_5.TabIndex = 4;
+            this.button_Box_5.UseVisualStyleBackColor = false;
+            this.button_Box_5.Click += new System.EventHandler(this.button_Box_5_Click);
+            // 
+            // button_Box_4
+            // 
+            this.button_Box_4.BackColor = System.Drawing.Color.White;
+            this.button_Box_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold);
+            this.button_Box_4.ForeColor = System.Drawing.Color.Black;
+            this.button_Box_4.Location = new System.Drawing.Point(12, 192);
+            this.button_Box_4.Name = "button_Box_4";
+            this.button_Box_4.Size = new System.Drawing.Size(170, 170);
+            this.button_Box_4.TabIndex = 3;
+            this.button_Box_4.UseVisualStyleBackColor = false;
+            this.button_Box_4.Click += new System.EventHandler(this.button_Box_4_Click);
+            // 
+            // button_Box_3
+            // 
+            this.button_Box_3.BackColor = System.Drawing.Color.White;
+            this.button_Box_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold);
+            this.button_Box_3.ForeColor = System.Drawing.Color.Black;
+            this.button_Box_3.Location = new System.Drawing.Point(371, 12);
+            this.button_Box_3.Name = "button_Box_3";
+            this.button_Box_3.Size = new System.Drawing.Size(170, 170);
+            this.button_Box_3.TabIndex = 2;
+            this.button_Box_3.UseVisualStyleBackColor = false;
+            this.button_Box_3.Click += new System.EventHandler(this.button_Box_3_Click);
+            // 
+            // button_Box_2
+            // 
+            this.button_Box_2.BackColor = System.Drawing.Color.White;
+            this.button_Box_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold);
+            this.button_Box_2.ForeColor = System.Drawing.Color.Black;
+            this.button_Box_2.Location = new System.Drawing.Point(191, 12);
+            this.button_Box_2.Name = "button_Box_2";
+            this.button_Box_2.Size = new System.Drawing.Size(170, 170);
+            this.button_Box_2.TabIndex = 1;
+            this.button_Box_2.UseVisualStyleBackColor = false;
+            this.button_Box_2.Click += new System.EventHandler(this.button_Box_2_Click);
+            // 
+            // button_Box_1
+            // 
+            this.button_Box_1.BackColor = System.Drawing.Color.White;
+            this.button_Box_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Box_1.ForeColor = System.Drawing.Color.Black;
+            this.button_Box_1.Location = new System.Drawing.Point(12, 12);
+            this.button_Box_1.Name = "button_Box_1";
+            this.button_Box_1.Size = new System.Drawing.Size(170, 170);
+            this.button_Box_1.TabIndex = 0;
+            this.button_Box_1.UseVisualStyleBackColor = false;
+            this.button_Box_1.Click += new System.EventHandler(this.button_Box_1_Click);
             // 
             // panel3
             // 
@@ -194,85 +293,15 @@ namespace TIK_TOK_WOE
             this.panel5.Size = new System.Drawing.Size(232, 146);
             this.panel5.TabIndex = 3;
             // 
-            // button2
+            // button11
             // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(191, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(170, 170);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(371, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(170, 170);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(12, 192);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(170, 170);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(191, 192);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(170, 170);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(371, 192);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(170, 170);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = false;
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(12, 373);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(170, 170);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(191, 373);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(170, 170);
-            this.button8.TabIndex = 7;
-            this.button8.Text = "button8";
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.White;
-            this.button9.Location = new System.Drawing.Point(371, 373);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(170, 170);
-            this.button9.TabIndex = 8;
-            this.button9.Text = "button9";
-            this.button9.UseVisualStyleBackColor = false;
+            this.button11.BackColor = System.Drawing.Color.White;
+            this.button11.Location = new System.Drawing.Point(6, 74);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(216, 66);
+            this.button11.TabIndex = 10;
+            this.button11.Text = "button11";
+            this.button11.UseVisualStyleBackColor = false;
             // 
             // button10
             // 
@@ -283,16 +312,6 @@ namespace TIK_TOK_WOE
             this.button10.TabIndex = 9;
             this.button10.Text = "button10";
             this.button10.UseVisualStyleBackColor = false;
-            // 
-            // button11
-            // 
-            this.button11.BackColor = System.Drawing.Color.White;
-            this.button11.Location = new System.Drawing.Point(6, 74);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(216, 66);
-            this.button11.TabIndex = 10;
-            this.button11.Text = "button11";
-            this.button11.UseVisualStyleBackColor = false;
             // 
             // mainForm
             // 
@@ -335,15 +354,15 @@ namespace TIK_TOK_WOE
         private System.Windows.Forms.Label player_O;
         private System.Windows.Forms.Label player_X;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button_Box_1;
+        private System.Windows.Forms.Button button_Box_9;
+        private System.Windows.Forms.Button button_Box_8;
+        private System.Windows.Forms.Button button_Box_7;
+        private System.Windows.Forms.Button button_Box_6;
+        private System.Windows.Forms.Button button_Box_5;
+        private System.Windows.Forms.Button button_Box_4;
+        private System.Windows.Forms.Button button_Box_3;
+        private System.Windows.Forms.Button button_Box_2;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button button10;
     }

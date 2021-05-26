@@ -26,27 +26,310 @@ namespace TIK_TOK_WOE
         Boolean enabler7;
         Boolean enabler8;
         Boolean enabler9;
+        
         int add;
+        byte draw_Token = 0;
 
         public mainForm()
         {
             InitializeComponent();
         }
 
-/*
-        void Enabler()
+        /*
+                void Enabler()
+                {
+                    button_Box_1.Enabled = false;
+                    button_Box_2.Enabled = false;
+                    button_Box_3.Enabled = false;
+                    button_Box_4.Enabled = false;
+                    button_Box_5.Enabled = false;
+                    button_Box_6.Enabled = false;
+                    button_Box_7.Enabled = false;
+                    button_Box_8.Enabled = false;
+                    button_Box_9.Enabled = false;
+                }
+        */
+
+        void Win_Condition()
         {
-            button_Box_1.Enabled = false;
-            button_Box_2.Enabled = false;
-            button_Box_3.Enabled = false;
-            button_Box_4.Enabled = false;
-            button_Box_5.Enabled = false;
-            button_Box_6.Enabled = false;
-            button_Box_7.Enabled = false;
-            button_Box_8.Enabled = false;
-            button_Box_9.Enabled = false;
+            // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+            if (button_Box_1.Text == "X" && button_Box_2.Text == "X" && button_Box_3.Text == "X")
+            {
+                button_Box_1.BackColor = Color.Green;
+                button_Box_2.BackColor = Color.Green;
+                button_Box_3.BackColor = Color.Green;
+
+                MessageBox.Show("Player X is DOMINATING!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
+                button_Box_4.Enabled = false;
+                button_Box_5.Enabled = false;
+                button_Box_6.Enabled = false;
+
+                button_Box_7.Enabled = false;
+                button_Box_8.Enabled = false;
+                button_Box_9.Enabled = false;
+            }
+
+            if (button_Box_4.Text == "X" && button_Box_5.Text == "X" && button_Box_6.Text == "X")
+            {
+                button_Box_4.BackColor = Color.Green;
+                button_Box_5.BackColor = Color.Green;
+                button_Box_6.BackColor = Color.Green;
+
+                MessageBox.Show("Player X is DOMINATING!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
+                button_Box_1.Enabled = false;
+                button_Box_2.Enabled = false;
+                button_Box_3.Enabled = false;
+
+                button_Box_7.Enabled = false;
+                button_Box_8.Enabled = false;
+                button_Box_9.Enabled = false;
+            }
+
+            if (button_Box_7.Text == "X" && button_Box_8.Text == "X" && button_Box_9.Text == "X")
+            {
+                button_Box_7.BackColor = Color.Green;
+                button_Box_8.BackColor = Color.Green;
+                button_Box_9.BackColor = Color.Green;
+
+                MessageBox.Show("Player X is DOMINATING!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
+                button_Box_4.Enabled = false;
+                button_Box_5.Enabled = false;
+                button_Box_6.Enabled = false;
+
+                button_Box_1.Enabled = false;
+                button_Box_2.Enabled = false;
+                button_Box_3.Enabled = false;
+            }
+
+            if (button_Box_1.Text == "X" && button_Box_4.Text == "X" && button_Box_7.Text == "X")
+            {
+                button_Box_1.BackColor = Color.Green;
+                button_Box_4.BackColor = Color.Green;
+                button_Box_7.BackColor = Color.Green;
+
+                MessageBox.Show("Player X is DOMINATING!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
+                button_Box_2.Enabled = false;
+                button_Box_5.Enabled = false;
+                button_Box_8.Enabled = false;
+
+                button_Box_3.Enabled = false;
+                button_Box_6.Enabled = false;
+                button_Box_9.Enabled = false;
+            }
+
+            if (button_Box_2.Text == "X" && button_Box_5.Text == "X" && button_Box_8.Text == "X")
+            {
+                button_Box_2.BackColor = Color.Green;
+                button_Box_5.BackColor = Color.Green;
+                button_Box_8.BackColor = Color.Green;
+
+                MessageBox.Show("Player X is DOMINATING!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
+                button_Box_1.Enabled = false;
+                button_Box_4.Enabled = false;
+                button_Box_7.Enabled = false;
+
+                button_Box_3.Enabled = false;
+                button_Box_6.Enabled = false;
+                button_Box_9.Enabled = false;
+            }
+
+            if (button_Box_3.Text == "X" && button_Box_6.Text == "X" && button_Box_9.Text == "X")
+            {
+                button_Box_3.BackColor = Color.Green;
+                button_Box_6.BackColor = Color.Green;
+                button_Box_9.BackColor = Color.Green;
+
+                MessageBox.Show("Player X is DOMINATING!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
+                button_Box_2.Enabled = false;
+                button_Box_5.Enabled = false;
+                button_Box_8.Enabled = false;
+
+                button_Box_1.Enabled = false;
+                button_Box_4.Enabled = false;
+                button_Box_7.Enabled = false;
+            }
+
+            if (button_Box_1.Text == "X" && button_Box_5.Text == "X" && button_Box_9.Text == "X")
+            {
+                button_Box_1.BackColor = Color.Green;
+                button_Box_5.BackColor = Color.Green;
+                button_Box_9.BackColor = Color.Green;
+
+                MessageBox.Show("Player X is DOMINATING!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
+                button_Box_2.Enabled = false;
+                button_Box_3.Enabled = false;
+                button_Box_4.Enabled = false;
+
+                button_Box_6.Enabled = false;
+                button_Box_7.Enabled = false;
+                button_Box_8.Enabled = false;
+            }
+
+            if (button_Box_3.Text == "X" && button_Box_5.Text == "X" && button_Box_7.Text == "X")
+            {
+                button_Box_3.BackColor = Color.Green;
+                button_Box_5.BackColor = Color.Green;
+                button_Box_7.BackColor = Color.Green;
+
+                MessageBox.Show("Player X is DOMINATING!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
+                button_Box_2.Enabled = false;
+                button_Box_1.Enabled = false;
+                button_Box_4.Enabled = false;
+
+                button_Box_6.Enabled = false;
+                button_Box_9.Enabled = false;
+                button_Box_8.Enabled = false;
+            }
+
+            // OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+
+            if (button_Box_1.Text == "O" && button_Box_2.Text == "O" && button_Box_3.Text == "O")
+            {
+                button_Box_1.BackColor = Color.Red;
+                button_Box_2.BackColor = Color.Red;
+                button_Box_3.BackColor = Color.Red;
+
+                MessageBox.Show("Player O is DOMINATING!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
+                button_Box_4.Enabled = false;
+                button_Box_5.Enabled = false;
+                button_Box_6.Enabled = false;
+
+                button_Box_7.Enabled = false;
+                button_Box_8.Enabled = false;
+                button_Box_9.Enabled = false;
+            }
+
+            if (button_Box_4.Text == "O" && button_Box_5.Text == "O" && button_Box_6.Text == "O")
+            {
+                button_Box_4.BackColor = Color.Red;
+                button_Box_5.BackColor = Color.Red;
+                button_Box_6.BackColor = Color.Red;
+
+                MessageBox.Show("Player O is DOMINATING!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
+                button_Box_1.Enabled = false;
+                button_Box_2.Enabled = false;
+                button_Box_3.Enabled = false;
+
+                button_Box_7.Enabled = false;
+                button_Box_8.Enabled = false;
+                button_Box_9.Enabled = false;
+            }
+
+            if (button_Box_7.Text == "O" && button_Box_8.Text == "O" && button_Box_9.Text == "O")
+            {
+                button_Box_7.BackColor = Color.Red;
+                button_Box_8.BackColor = Color.Red;
+                button_Box_9.BackColor = Color.Red;
+
+                MessageBox.Show("Player O is DOMINATING!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
+                button_Box_4.Enabled = false;
+                button_Box_5.Enabled = false;
+                button_Box_6.Enabled = false;
+
+                button_Box_1.Enabled = false;
+                button_Box_2.Enabled = false;
+                button_Box_3.Enabled = false;
+            }
+
+            if (button_Box_1.Text == "O" && button_Box_4.Text == "O" && button_Box_7.Text == "O")
+            {
+                button_Box_1.BackColor = Color.Red;
+                button_Box_4.BackColor = Color.Red;
+                button_Box_7.BackColor = Color.Red;
+
+                MessageBox.Show("Player O is DOMINATING!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
+                button_Box_2.Enabled = false;
+                button_Box_5.Enabled = false;
+                button_Box_8.Enabled = false;
+
+                button_Box_3.Enabled = false;
+                button_Box_6.Enabled = false;
+                button_Box_9.Enabled = false;
+            }
+
+            if (button_Box_2.Text == "O" && button_Box_5.Text == "O" && button_Box_8.Text == "O")
+            {
+                button_Box_2.BackColor = Color.Red;
+                button_Box_5.BackColor = Color.Red;
+                button_Box_8.BackColor = Color.Red;
+
+                MessageBox.Show("Player O is DOMINATING!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
+                button_Box_1.Enabled = false;
+                button_Box_4.Enabled = false;
+                button_Box_7.Enabled = false;
+
+                button_Box_3.Enabled = false;
+                button_Box_6.Enabled = false;
+                button_Box_9.Enabled = false;
+            }
+
+            if (button_Box_3.Text == "O" && button_Box_6.Text == "O" && button_Box_9.Text == "O")
+            {
+                button_Box_3.BackColor = Color.Red;
+                button_Box_6.BackColor = Color.Red;
+                button_Box_9.BackColor = Color.Red;
+
+                MessageBox.Show("Player O is DOMINATING!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
+                button_Box_2.Enabled = false;
+                button_Box_5.Enabled = false;
+                button_Box_8.Enabled = false;
+
+                button_Box_1.Enabled = false;
+                button_Box_4.Enabled = false;
+                button_Box_7.Enabled = false;
+            }
+
+            if (button_Box_1.Text == "O" && button_Box_5.Text == "O" && button_Box_9.Text == "O")
+            {
+                button_Box_1.BackColor = Color.Red;
+                button_Box_5.BackColor = Color.Red;
+                button_Box_9.BackColor = Color.Red;
+
+                MessageBox.Show("Player O is DOMINATING!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
+                button_Box_2.Enabled = false;
+                button_Box_3.Enabled = false;
+                button_Box_4.Enabled = false;
+
+                button_Box_6.Enabled = false;
+                button_Box_7.Enabled = false;
+                button_Box_8.Enabled = false;
+            }
+
+            if (button_Box_3.Text == "O" && button_Box_5.Text == "O" && button_Box_7.Text == "O")
+            {
+                button_Box_3.BackColor = Color.Red;
+                button_Box_5.BackColor = Color.Red;
+                button_Box_7.BackColor = Color.Red;
+
+                MessageBox.Show("Player O is DOMINATING!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
+                button_Box_2.Enabled = false;
+                button_Box_1.Enabled = false;
+                button_Box_4.Enabled = false;
+
+                button_Box_6.Enabled = false;
+                button_Box_9.Enabled = false;
+                button_Box_8.Enabled = false;
+            }
         }
-*/
+
+        void Draw_Condition()
+        {
+            if (draw_Token == 9)
+            {
+                MessageBox.Show("Gordon Ramsay shouted, DRAW!!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
+                button_Box_1.Enabled = false;
+                button_Box_2.Enabled = false;
+                button_Box_3.Enabled = false;
+                button_Box_4.Enabled = false;
+                button_Box_5.Enabled = false;
+                button_Box_6.Enabled = false;
+                button_Box_7.Enabled = false;
+                button_Box_8.Enabled = false;
+                button_Box_9.Enabled = false;
+            }
+
+        }
 
         private void button_Box_1_Click(object sender, EventArgs e)
         {
@@ -64,8 +347,12 @@ namespace TIK_TOK_WOE
                     player_Turn = false;
                     button_Box_1.ForeColor = Color.Green;
                 }
+                Win_Condition();
+                draw_Token = (byte)(draw_Token + 1);
+                Draw_Condition();
             }
             enabler1 = true;
+            
             
 
             //button_Box_1.Enabled = false;
@@ -87,6 +374,9 @@ namespace TIK_TOK_WOE
                     player_Turn = false;
                     button_Box_2.ForeColor = Color.Green;
                 }
+                Win_Condition();
+                draw_Token = (byte)(draw_Token + 1);
+                Draw_Condition();
             }
             enabler2 = true;
             //button_Box_3.Enabled = false;
@@ -108,6 +398,9 @@ namespace TIK_TOK_WOE
                     player_Turn = false;
                     button_Box_3.ForeColor = Color.Green;
                 }
+                Win_Condition();
+                draw_Token = (byte)(draw_Token + 1);
+                Draw_Condition();
             }
             enabler3 = true;
             //button_Box_3.Enabled = false;
@@ -129,6 +422,9 @@ namespace TIK_TOK_WOE
                     player_Turn = false;
                     button_Box_4.ForeColor = Color.Green;
                 }
+                Win_Condition();
+                draw_Token = (byte)(draw_Token + 1);
+                Draw_Condition();
             }
             enabler4 = true;
             // button_Box_4.Enabled = false;
@@ -150,6 +446,9 @@ namespace TIK_TOK_WOE
                     player_Turn = false;
                     button_Box_5.ForeColor = Color.Green;
                 }
+                Win_Condition();
+                draw_Token = (byte)(draw_Token + 1);
+                Draw_Condition();
             }
             enabler5 = true;
             // button_Box_5.Enabled = false;
@@ -171,6 +470,9 @@ namespace TIK_TOK_WOE
                     player_Turn = false;
                     button_Box_6.ForeColor = Color.Green;
                 }
+                Win_Condition();
+                draw_Token = (byte)(draw_Token + 1);
+                Draw_Condition();
             }
             enabler6 = true;
             //  button_Box_6.Enabled = false;
@@ -192,6 +494,9 @@ namespace TIK_TOK_WOE
                     player_Turn = false;
                     button_Box_7.ForeColor = Color.Green;
                 }
+                Win_Condition();
+                draw_Token = (byte)(draw_Token + 1);
+                Draw_Condition();
             }
             enabler7 = true;
             //   button_Box_7.Enabled = false;
@@ -213,6 +518,9 @@ namespace TIK_TOK_WOE
                     player_Turn = false;
                     button_Box_8.ForeColor = Color.Green;
                 }
+                Win_Condition();
+                draw_Token = (byte)(draw_Token + 1);
+                Draw_Condition();
             }
             enabler8 = true;
             //  button_Box_8.Enabled = false;
@@ -234,9 +542,13 @@ namespace TIK_TOK_WOE
                     player_Turn = false;
                     button_Box_9.ForeColor = Color.Green;
                 }
+                Win_Condition();
+                draw_Token = (byte)(draw_Token + 1);
+                Draw_Condition();
             }
             enabler9 = true;
             //   button_Box_9.Enabled = false;
         }
+
     }
 }

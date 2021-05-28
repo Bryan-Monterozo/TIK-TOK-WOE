@@ -49,8 +49,8 @@ namespace TIK_TOK_WOE
             this.player_O = new System.Windows.Forms.Label();
             this.player_X = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.newgame_Button = new System.Windows.Forms.Button();
+            this.reset_Button = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -285,33 +285,39 @@ namespace TIK_TOK_WOE
             // 
             this.panel5.BackColor = System.Drawing.Color.RoyalBlue;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel5.Controls.Add(this.button11);
-            this.panel5.Controls.Add(this.button10);
+            this.panel5.Controls.Add(this.newgame_Button);
+            this.panel5.Controls.Add(this.reset_Button);
             this.panel5.ForeColor = System.Drawing.Color.White;
             this.panel5.Location = new System.Drawing.Point(468, 109);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(232, 146);
             this.panel5.TabIndex = 3;
             // 
-            // button11
+            // newgame_Button
             // 
-            this.button11.BackColor = System.Drawing.Color.White;
-            this.button11.Location = new System.Drawing.Point(6, 74);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(216, 66);
-            this.button11.TabIndex = 10;
-            this.button11.Text = "button11";
-            this.button11.UseVisualStyleBackColor = false;
+            this.newgame_Button.BackColor = System.Drawing.Color.White;
+            this.newgame_Button.Font = new System.Drawing.Font("Snap ITC", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newgame_Button.ForeColor = System.Drawing.Color.Black;
+            this.newgame_Button.Location = new System.Drawing.Point(6, 74);
+            this.newgame_Button.Name = "newgame_Button";
+            this.newgame_Button.Size = new System.Drawing.Size(216, 66);
+            this.newgame_Button.TabIndex = 10;
+            this.newgame_Button.Text = "NEW GAME";
+            this.newgame_Button.UseVisualStyleBackColor = false;
+            this.newgame_Button.Click += new System.EventHandler(this.newgame_Button_Click);
             // 
-            // button10
+            // reset_Button
             // 
-            this.button10.BackColor = System.Drawing.Color.White;
-            this.button10.Location = new System.Drawing.Point(6, 3);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(216, 66);
-            this.button10.TabIndex = 9;
-            this.button10.Text = "button10";
-            this.button10.UseVisualStyleBackColor = false;
+            this.reset_Button.BackColor = System.Drawing.Color.White;
+            this.reset_Button.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reset_Button.ForeColor = System.Drawing.Color.Black;
+            this.reset_Button.Location = new System.Drawing.Point(6, 3);
+            this.reset_Button.Name = "reset_Button";
+            this.reset_Button.Size = new System.Drawing.Size(216, 66);
+            this.reset_Button.TabIndex = 9;
+            this.reset_Button.Text = "RESET";
+            this.reset_Button.UseVisualStyleBackColor = false;
+            this.reset_Button.Click += new System.EventHandler(this.reset_Button_Click);
             // 
             // mainForm
             // 
@@ -363,8 +369,8 @@ namespace TIK_TOK_WOE
         private System.Windows.Forms.Button button_Box_4;
         private System.Windows.Forms.Button button_Box_3;
         private System.Windows.Forms.Button button_Box_2;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button newgame_Button;
+        private System.Windows.Forms.Button reset_Button;
     }
 }
 

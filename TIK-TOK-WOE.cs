@@ -14,21 +14,22 @@ namespace TIK_TOK_WOE
     {
         //Assigning Variables
 
-        Boolean player_Turn;
+        bool player_Turn;
 
         //instead of using .Enabled for changing text forecolor
-        Boolean enabler1;
-        Boolean enabler2;
-        Boolean enabler3;
-        Boolean enabler4;
-        Boolean enabler5;
-        Boolean enabler6;
-        Boolean enabler7;
-        Boolean enabler8;
-        Boolean enabler9;
+        bool enabler1;
+        bool enabler2;
+        bool enabler3;
+        bool enabler4;
+        bool enabler5;
+        bool enabler6;
+        bool enabler7;
+        bool enabler8;
+        bool enabler9;
         
         short add_Score;
         byte draw_Token = 0;
+        bool win_Token; //to fix double winning pattern
 
         public mainForm()
         {
@@ -39,7 +40,7 @@ namespace TIK_TOK_WOE
         {
             // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-            if (button_Box_1.Text == "X" && button_Box_2.Text == "X" && button_Box_3.Text == "X")
+            if (button_Box_1.Text == "X" && button_Box_2.Text == "X" && button_Box_3.Text == "X" && win_Token == false)
             {
                 button_Box_1.BackColor = Color.Green;
                 button_Box_2.BackColor = Color.Green;
@@ -55,11 +56,12 @@ namespace TIK_TOK_WOE
                 button_Box_9.Enabled = false;
 
                 draw_Token = 0;
+                win_Token = true;
                 add_Score = short.Parse(player_X_Score.Text);
                 player_X_Score.Text = Convert.ToString(add_Score + 1);
             }
 
-            if (button_Box_4.Text == "X" && button_Box_5.Text == "X" && button_Box_6.Text == "X")
+            if (button_Box_4.Text == "X" && button_Box_5.Text == "X" && button_Box_6.Text == "X" && win_Token == false)
             {
                 button_Box_4.BackColor = Color.Green;
                 button_Box_5.BackColor = Color.Green;
@@ -74,11 +76,12 @@ namespace TIK_TOK_WOE
                 button_Box_8.Enabled = false;
                 button_Box_9.Enabled = false;
                 draw_Token = 0;
+                win_Token = true;
                 add_Score = short.Parse(player_X_Score.Text);
                 player_X_Score.Text = Convert.ToString(add_Score + 1);
             }
 
-            if (button_Box_7.Text == "X" && button_Box_8.Text == "X" && button_Box_9.Text == "X")
+            if (button_Box_7.Text == "X" && button_Box_8.Text == "X" && button_Box_9.Text == "X" && win_Token == false)
             {
                 button_Box_7.BackColor = Color.Green;
                 button_Box_8.BackColor = Color.Green;
@@ -93,11 +96,12 @@ namespace TIK_TOK_WOE
                 button_Box_2.Enabled = false;
                 button_Box_3.Enabled = false;
                 draw_Token = 0;
+                win_Token = true;
                 add_Score = short.Parse(player_X_Score.Text);
                 player_X_Score.Text = Convert.ToString(add_Score + 1);
             }
 
-            if (button_Box_1.Text == "X" && button_Box_4.Text == "X" && button_Box_7.Text == "X")
+            if (button_Box_1.Text == "X" && button_Box_4.Text == "X" && button_Box_7.Text == "X" && win_Token == false)
             {
                 button_Box_1.BackColor = Color.Green;
                 button_Box_4.BackColor = Color.Green;
@@ -112,11 +116,12 @@ namespace TIK_TOK_WOE
                 button_Box_6.Enabled = false;
                 button_Box_9.Enabled = false;
                 draw_Token = 0;
+                win_Token = true;
                 add_Score = short.Parse(player_X_Score.Text);
                 player_X_Score.Text = Convert.ToString(add_Score + 1);
             }
 
-            if (button_Box_2.Text == "X" && button_Box_5.Text == "X" && button_Box_8.Text == "X")
+            if (button_Box_2.Text == "X" && button_Box_5.Text == "X" && button_Box_8.Text == "X" && win_Token == false)
             {
                 button_Box_2.BackColor = Color.Green;
                 button_Box_5.BackColor = Color.Green;
@@ -131,11 +136,12 @@ namespace TIK_TOK_WOE
                 button_Box_6.Enabled = false;
                 button_Box_9.Enabled = false;
                 draw_Token = 0;
+                win_Token = true;
                 add_Score = short.Parse(player_X_Score.Text);
                 player_X_Score.Text = Convert.ToString(add_Score + 1);
             }
 
-            if (button_Box_3.Text == "X" && button_Box_6.Text == "X" && button_Box_9.Text == "X")
+            if (button_Box_3.Text == "X" && button_Box_6.Text == "X" && button_Box_9.Text == "X" && win_Token == false)
             {
                 button_Box_3.BackColor = Color.Green;
                 button_Box_6.BackColor = Color.Green;
@@ -150,11 +156,12 @@ namespace TIK_TOK_WOE
                 button_Box_4.Enabled = false;
                 button_Box_7.Enabled = false;
                 draw_Token = 0;
+                win_Token = true;
                 add_Score = short.Parse(player_X_Score.Text);
                 player_X_Score.Text = Convert.ToString(add_Score + 1);
             }
 
-            if (button_Box_1.Text == "X" && button_Box_5.Text == "X" && button_Box_9.Text == "X")
+            if (button_Box_1.Text == "X" && button_Box_5.Text == "X" && button_Box_9.Text == "X" && win_Token == false)
             {
                 button_Box_1.BackColor = Color.Green;
                 button_Box_5.BackColor = Color.Green;
@@ -169,11 +176,12 @@ namespace TIK_TOK_WOE
                 button_Box_7.Enabled = false;
                 button_Box_8.Enabled = false;
                 draw_Token = 0;
+                win_Token = true;
                 add_Score = short.Parse(player_X_Score.Text);
                 player_X_Score.Text = Convert.ToString(add_Score + 1);
             }
 
-            if (button_Box_3.Text == "X" && button_Box_5.Text == "X" && button_Box_7.Text == "X")
+            if (button_Box_3.Text == "X" && button_Box_5.Text == "X" && button_Box_7.Text == "X" && win_Token == false)
             {
                 button_Box_3.BackColor = Color.Green;
                 button_Box_5.BackColor = Color.Green;
@@ -188,13 +196,14 @@ namespace TIK_TOK_WOE
                 button_Box_9.Enabled = false;
                 button_Box_8.Enabled = false;
                 draw_Token = 0;
+                win_Token = true;
                 add_Score = short.Parse(player_X_Score.Text);
                 player_X_Score.Text = Convert.ToString(add_Score + 1);
             }
 
             // OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
 
-            if (button_Box_1.Text == "O" && button_Box_2.Text == "O" && button_Box_3.Text == "O")
+            if (button_Box_1.Text == "O" && button_Box_2.Text == "O" && button_Box_3.Text == "O" && win_Token == false)
             {
                 button_Box_1.BackColor = Color.Red;
                 button_Box_2.BackColor = Color.Red;
@@ -209,11 +218,12 @@ namespace TIK_TOK_WOE
                 button_Box_8.Enabled = false;
                 button_Box_9.Enabled = false;
                 draw_Token = 0;
+                win_Token = true;
                 add_Score = short.Parse(player_O_Score.Text);
                 player_O_Score.Text = Convert.ToString(add_Score + 1);
             }
 
-            if (button_Box_4.Text == "O" && button_Box_5.Text == "O" && button_Box_6.Text == "O")
+            if (button_Box_4.Text == "O" && button_Box_5.Text == "O" && button_Box_6.Text == "O" && win_Token == false)
             {
                 button_Box_4.BackColor = Color.Red;
                 button_Box_5.BackColor = Color.Red;
@@ -228,11 +238,12 @@ namespace TIK_TOK_WOE
                 button_Box_8.Enabled = false;
                 button_Box_9.Enabled = false;
                 draw_Token = 0;
+                win_Token = true;
                 add_Score = short.Parse(player_O_Score.Text);
                 player_O_Score.Text = Convert.ToString(add_Score + 1);
             }
 
-            if (button_Box_7.Text == "O" && button_Box_8.Text == "O" && button_Box_9.Text == "O")
+            if (button_Box_7.Text == "O" && button_Box_8.Text == "O" && button_Box_9.Text == "O" && win_Token == false)
             {
                 button_Box_7.BackColor = Color.Red;
                 button_Box_8.BackColor = Color.Red;
@@ -247,11 +258,12 @@ namespace TIK_TOK_WOE
                 button_Box_2.Enabled = false;
                 button_Box_3.Enabled = false;
                 draw_Token = 0;
+                win_Token = true;
                 add_Score = short.Parse(player_O_Score.Text);
                 player_O_Score.Text = Convert.ToString(add_Score + 1);
             }
 
-            if (button_Box_1.Text == "O" && button_Box_4.Text == "O" && button_Box_7.Text == "O")
+            if (button_Box_1.Text == "O" && button_Box_4.Text == "O" && button_Box_7.Text == "O" && win_Token == false)
             {
                 button_Box_1.BackColor = Color.Red;
                 button_Box_4.BackColor = Color.Red;
@@ -266,11 +278,12 @@ namespace TIK_TOK_WOE
                 button_Box_6.Enabled = false;
                 button_Box_9.Enabled = false;
                 draw_Token = 0;
+                win_Token = true;
                 add_Score = short.Parse(player_O_Score.Text);
                 player_O_Score.Text = Convert.ToString(add_Score + 1);
             }
 
-            if (button_Box_2.Text == "O" && button_Box_5.Text == "O" && button_Box_8.Text == "O")
+            if (button_Box_2.Text == "O" && button_Box_5.Text == "O" && button_Box_8.Text == "O" && win_Token == false)
             {
                 button_Box_2.BackColor = Color.Red;
                 button_Box_5.BackColor = Color.Red;
@@ -285,11 +298,12 @@ namespace TIK_TOK_WOE
                 button_Box_6.Enabled = false;
                 button_Box_9.Enabled = false;
                 draw_Token = 0;
+                win_Token = true;
                 add_Score = short.Parse(player_O_Score.Text);
                 player_O_Score.Text = Convert.ToString(add_Score + 1);
             }
 
-            if (button_Box_3.Text == "O" && button_Box_6.Text == "O" && button_Box_9.Text == "O")
+            if (button_Box_3.Text == "O" && button_Box_6.Text == "O" && button_Box_9.Text == "O" && win_Token == false)
             {
                 button_Box_3.BackColor = Color.Red;
                 button_Box_6.BackColor = Color.Red;
@@ -304,11 +318,12 @@ namespace TIK_TOK_WOE
                 button_Box_4.Enabled = false;
                 button_Box_7.Enabled = false;
                 draw_Token = 0;
+                win_Token = true;
                 add_Score = short.Parse(player_O_Score.Text);
                 player_O_Score.Text = Convert.ToString(add_Score + 1);
             }
 
-            if (button_Box_1.Text == "O" && button_Box_5.Text == "O" && button_Box_9.Text == "O")
+            if (button_Box_1.Text == "O" && button_Box_5.Text == "O" && button_Box_9.Text == "O" && win_Token == false)
             {
                 button_Box_1.BackColor = Color.Red;
                 button_Box_5.BackColor = Color.Red;
@@ -323,11 +338,12 @@ namespace TIK_TOK_WOE
                 button_Box_7.Enabled = false;
                 button_Box_8.Enabled = false;
                 draw_Token = 0;
+                win_Token = true;
                 add_Score = short.Parse(player_O_Score.Text);
                 player_O_Score.Text = Convert.ToString(add_Score + 1);
             }
 
-            if (button_Box_3.Text == "O" && button_Box_5.Text == "O" && button_Box_7.Text == "O")
+            if (button_Box_3.Text == "O" && button_Box_5.Text == "O" && button_Box_7.Text == "O" && win_Token == false)
             {
                 button_Box_3.BackColor = Color.Red;
                 button_Box_5.BackColor = Color.Red;
@@ -342,6 +358,7 @@ namespace TIK_TOK_WOE
                 button_Box_9.Enabled = false;
                 button_Box_8.Enabled = false;
                 draw_Token = 0;
+                win_Token = true;
                 add_Score = short.Parse(player_O_Score.Text);
                 player_O_Score.Text = Convert.ToString(add_Score + 1);
             }
@@ -351,7 +368,7 @@ namespace TIK_TOK_WOE
         {
             if (draw_Token == 9)
             {
-                MessageBox.Show("DRAW!!! -Gordon Ramsey probably", "TIK-TOK-WOE", MessageBoxButtons.OK);
+                MessageBox.Show("DRAW!!! -Gordon Ramsay probably", "TIK-TOK-WOE", MessageBoxButtons.OK);
                 button_Box_1.Enabled = false;
                 button_Box_2.Enabled = false;
                 button_Box_3.Enabled = false;
@@ -579,6 +596,7 @@ namespace TIK_TOK_WOE
         private void reset_Button_Click(object sender, EventArgs e)
         {
             draw_Token = 0;
+            win_Token = false;
 
             //button text
             button_Box_1.Text = "";
@@ -633,6 +651,7 @@ namespace TIK_TOK_WOE
             if (new_Game_Confirm == DialogResult.Yes)
             {
                 draw_Token = 0;
+                win_Token = false;
 
                 //button text
                 button_Box_1.Text = "";

@@ -30,9 +30,9 @@ namespace TIK_TOK_WOE
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.title_Panel = new System.Windows.Forms.Panel();
             this.textbox_Title = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.game_Panel = new System.Windows.Forms.Panel();
             this.button_Box_9 = new System.Windows.Forms.Button();
             this.button_Box_8 = new System.Windows.Forms.Button();
             this.button_Box_7 = new System.Windows.Forms.Button();
@@ -42,31 +42,31 @@ namespace TIK_TOK_WOE
             this.button_Box_3 = new System.Windows.Forms.Button();
             this.button_Box_2 = new System.Windows.Forms.Button();
             this.button_Box_1 = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.icon_Panel = new System.Windows.Forms.Panel();
+            this.score_Panel = new System.Windows.Forms.Panel();
             this.player_O_Score = new System.Windows.Forms.Label();
             this.player_X_Score = new System.Windows.Forms.Label();
             this.player_O = new System.Windows.Forms.Label();
             this.player_X = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.options_Panel = new System.Windows.Forms.Panel();
             this.newgame_Button = new System.Windows.Forms.Button();
             this.reset_Button = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
+            this.title_Panel.SuspendLayout();
+            this.game_Panel.SuspendLayout();
+            this.score_Panel.SuspendLayout();
+            this.options_Panel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
+            // title_Panel
             // 
-            this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1.Controls.Add(this.textbox_Title);
-            this.panel1.ForeColor = System.Drawing.Color.White;
-            this.panel1.Location = new System.Drawing.Point(120, 13);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(580, 90);
-            this.panel1.TabIndex = 0;
+            this.title_Panel.BackColor = System.Drawing.Color.RoyalBlue;
+            this.title_Panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.title_Panel.Controls.Add(this.textbox_Title);
+            this.title_Panel.ForeColor = System.Drawing.Color.White;
+            this.title_Panel.Location = new System.Drawing.Point(120, 13);
+            this.title_Panel.Name = "title_Panel";
+            this.title_Panel.Size = new System.Drawing.Size(580, 90);
+            this.title_Panel.TabIndex = 0;
             // 
             // textbox_Title
             // 
@@ -74,30 +74,30 @@ namespace TIK_TOK_WOE
             this.textbox_Title.BackColor = System.Drawing.Color.RoyalBlue;
             this.textbox_Title.Font = new System.Drawing.Font("Snap ITC", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textbox_Title.ForeColor = System.Drawing.Color.White;
-            this.textbox_Title.Location = new System.Drawing.Point(3, -2);
+            this.textbox_Title.Location = new System.Drawing.Point(0, -2);
             this.textbox_Title.Name = "textbox_Title";
             this.textbox_Title.Size = new System.Drawing.Size(573, 86);
             this.textbox_Title.TabIndex = 0;
             this.textbox_Title.Text = "TIK-TOK-WOE";
             // 
-            // panel2
+            // game_Panel
             // 
-            this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.button_Box_9);
-            this.panel2.Controls.Add(this.button_Box_8);
-            this.panel2.Controls.Add(this.button_Box_7);
-            this.panel2.Controls.Add(this.button_Box_6);
-            this.panel2.Controls.Add(this.button_Box_5);
-            this.panel2.Controls.Add(this.button_Box_4);
-            this.panel2.Controls.Add(this.button_Box_3);
-            this.panel2.Controls.Add(this.button_Box_2);
-            this.panel2.Controls.Add(this.button_Box_1);
-            this.panel2.ForeColor = System.Drawing.Color.White;
-            this.panel2.Location = new System.Drawing.Point(70, 270);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(560, 560);
-            this.panel2.TabIndex = 1;
+            this.game_Panel.BackColor = System.Drawing.Color.RoyalBlue;
+            this.game_Panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.game_Panel.Controls.Add(this.button_Box_9);
+            this.game_Panel.Controls.Add(this.button_Box_8);
+            this.game_Panel.Controls.Add(this.button_Box_7);
+            this.game_Panel.Controls.Add(this.button_Box_6);
+            this.game_Panel.Controls.Add(this.button_Box_5);
+            this.game_Panel.Controls.Add(this.button_Box_4);
+            this.game_Panel.Controls.Add(this.button_Box_3);
+            this.game_Panel.Controls.Add(this.button_Box_2);
+            this.game_Panel.Controls.Add(this.button_Box_1);
+            this.game_Panel.ForeColor = System.Drawing.Color.White;
+            this.game_Panel.Location = new System.Drawing.Point(70, 270);
+            this.game_Panel.Name = "game_Panel";
+            this.game_Panel.Size = new System.Drawing.Size(560, 560);
+            this.game_Panel.TabIndex = 1;
             // 
             // button_Box_9
             // 
@@ -207,29 +207,31 @@ namespace TIK_TOK_WOE
             this.button_Box_1.UseVisualStyleBackColor = false;
             this.button_Box_1.Click += new System.EventHandler(this.button_Box_1_Click);
             // 
-            // panel3
+            // icon_Panel
             // 
-            this.panel3.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel3.ForeColor = System.Drawing.Color.White;
-            this.panel3.Location = new System.Drawing.Point(12, 13);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(90, 90);
-            this.panel3.TabIndex = 2;
+            this.icon_Panel.BackColor = System.Drawing.Color.RoyalBlue;
+            this.icon_Panel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("icon_Panel.BackgroundImage")));
+            this.icon_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.icon_Panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.icon_Panel.ForeColor = System.Drawing.Color.White;
+            this.icon_Panel.Location = new System.Drawing.Point(12, 13);
+            this.icon_Panel.Name = "icon_Panel";
+            this.icon_Panel.Size = new System.Drawing.Size(90, 90);
+            this.icon_Panel.TabIndex = 2;
             // 
-            // panel4
+            // score_Panel
             // 
-            this.panel4.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel4.Controls.Add(this.player_O_Score);
-            this.panel4.Controls.Add(this.player_X_Score);
-            this.panel4.Controls.Add(this.player_O);
-            this.panel4.Controls.Add(this.player_X);
-            this.panel4.ForeColor = System.Drawing.Color.White;
-            this.panel4.Location = new System.Drawing.Point(12, 109);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(439, 146);
-            this.panel4.TabIndex = 3;
+            this.score_Panel.BackColor = System.Drawing.Color.RoyalBlue;
+            this.score_Panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.score_Panel.Controls.Add(this.player_O_Score);
+            this.score_Panel.Controls.Add(this.player_X_Score);
+            this.score_Panel.Controls.Add(this.player_O);
+            this.score_Panel.Controls.Add(this.player_X);
+            this.score_Panel.ForeColor = System.Drawing.Color.White;
+            this.score_Panel.Location = new System.Drawing.Point(12, 109);
+            this.score_Panel.Name = "score_Panel";
+            this.score_Panel.Size = new System.Drawing.Size(439, 146);
+            this.score_Panel.TabIndex = 3;
             // 
             // player_O_Score
             // 
@@ -281,17 +283,17 @@ namespace TIK_TOK_WOE
             this.player_X.TabIndex = 1;
             this.player_X.Text = "PLAYER X:";
             // 
-            // panel5
+            // options_Panel
             // 
-            this.panel5.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel5.Controls.Add(this.newgame_Button);
-            this.panel5.Controls.Add(this.reset_Button);
-            this.panel5.ForeColor = System.Drawing.Color.White;
-            this.panel5.Location = new System.Drawing.Point(468, 109);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(232, 146);
-            this.panel5.TabIndex = 3;
+            this.options_Panel.BackColor = System.Drawing.Color.RoyalBlue;
+            this.options_Panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.options_Panel.Controls.Add(this.newgame_Button);
+            this.options_Panel.Controls.Add(this.reset_Button);
+            this.options_Panel.ForeColor = System.Drawing.Color.White;
+            this.options_Panel.Location = new System.Drawing.Point(468, 109);
+            this.options_Panel.Name = "options_Panel";
+            this.options_Panel.Size = new System.Drawing.Size(232, 146);
+            this.options_Panel.TabIndex = 3;
             // 
             // newgame_Button
             // 
@@ -326,11 +328,11 @@ namespace TIK_TOK_WOE
             this.BackColor = System.Drawing.Color.DarkCyan;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(713, 849);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.options_Panel);
+            this.Controls.Add(this.game_Panel);
+            this.Controls.Add(this.icon_Panel);
+            this.Controls.Add(this.score_Panel);
+            this.Controls.Add(this.title_Panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -338,28 +340,28 @@ namespace TIK_TOK_WOE
             this.Name = "mainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TIK-TOK-WOE";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel5.ResumeLayout(false);
+            this.title_Panel.ResumeLayout(false);
+            this.title_Panel.PerformLayout();
+            this.game_Panel.ResumeLayout(false);
+            this.score_Panel.ResumeLayout(false);
+            this.score_Panel.PerformLayout();
+            this.options_Panel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel title_Panel;
+        private System.Windows.Forms.Panel game_Panel;
+        private System.Windows.Forms.Panel icon_Panel;
+        private System.Windows.Forms.Panel score_Panel;
         private System.Windows.Forms.Label textbox_Title;
         private System.Windows.Forms.Label player_O_Score;
         private System.Windows.Forms.Label player_X_Score;
         private System.Windows.Forms.Label player_O;
         private System.Windows.Forms.Label player_X;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel options_Panel;
         private System.Windows.Forms.Button button_Box_1;
         private System.Windows.Forms.Button button_Box_9;
         private System.Windows.Forms.Button button_Box_8;

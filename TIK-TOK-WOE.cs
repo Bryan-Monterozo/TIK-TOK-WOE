@@ -35,21 +35,6 @@ namespace TIK_TOK_WOE
             InitializeComponent();
         }
 
-        /*
-                void Enabler()
-                {
-                    button_Box_1.Enabled = false;
-                    button_Box_2.Enabled = false;
-                    button_Box_3.Enabled = false;
-                    button_Box_4.Enabled = false;
-                    button_Box_5.Enabled = false;
-                    button_Box_6.Enabled = false;
-                    button_Box_7.Enabled = false;
-                    button_Box_8.Enabled = false;
-                    button_Box_9.Enabled = false;
-                }
-        */
-
         void Win_Condition()
         {
             // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
@@ -366,7 +351,7 @@ namespace TIK_TOK_WOE
         {
             if (draw_Token == 9)
             {
-                MessageBox.Show("Gordon Ramsay shouted, DRAW!!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
+                MessageBox.Show("DRAW!!! -Gordon Ramsey probably", "TIK-TOK-WOE", MessageBoxButtons.OK);
                 button_Box_1.Enabled = false;
                 button_Box_2.Enabled = false;
                 button_Box_3.Enabled = false;
@@ -405,7 +390,6 @@ namespace TIK_TOK_WOE
             
             
 
-            //button_Box_1.Enabled = false;
         }
 
         private void button_Box_2_Click(object sender, EventArgs e)
@@ -429,7 +413,6 @@ namespace TIK_TOK_WOE
                 Draw_Condition();
             }
             enabler2 = true;
-            //button_Box_3.Enabled = false;
         }
 
         private void button_Box_3_Click(object sender, EventArgs e)
@@ -453,7 +436,6 @@ namespace TIK_TOK_WOE
                 Draw_Condition();
             }
             enabler3 = true;
-            //button_Box_3.Enabled = false;
         }
 
         private void button_Box_4_Click(object sender, EventArgs e)
@@ -477,7 +459,6 @@ namespace TIK_TOK_WOE
                 Draw_Condition();
             }
             enabler4 = true;
-            // button_Box_4.Enabled = false;
         }
 
         private void button_Box_5_Click(object sender, EventArgs e)
@@ -501,7 +482,6 @@ namespace TIK_TOK_WOE
                 Draw_Condition();
             }
             enabler5 = true;
-            // button_Box_5.Enabled = false;
         }
 
         private void button_Box_6_Click(object sender, EventArgs e)
@@ -525,7 +505,6 @@ namespace TIK_TOK_WOE
                 Draw_Condition();
             }
             enabler6 = true;
-            //  button_Box_6.Enabled = false;
         }
 
         private void button_Box_7_Click(object sender, EventArgs e)
@@ -549,7 +528,6 @@ namespace TIK_TOK_WOE
                 Draw_Condition();
             }
             enabler7 = true;
-            //   button_Box_7.Enabled = false;
         }
 
         private void button_Box_8_Click(object sender, EventArgs e)
@@ -573,7 +551,6 @@ namespace TIK_TOK_WOE
                 Draw_Condition();
             }
             enabler8 = true;
-            //  button_Box_8.Enabled = false;
         }
 
         private void button_Box_9_Click(object sender, EventArgs e)
@@ -597,7 +574,6 @@ namespace TIK_TOK_WOE
                 Draw_Condition();
             }
             enabler9 = true;
-            //   button_Box_9.Enabled = false;
         }
 
         private void reset_Button_Click(object sender, EventArgs e)

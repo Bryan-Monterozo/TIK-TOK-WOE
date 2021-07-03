@@ -82,6 +82,9 @@ namespace TIK_TOK_WOE
             // 
             // game_Panel
             // 
+            this.game_Panel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.game_Panel.BackColor = System.Drawing.Color.RoyalBlue;
             this.game_Panel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.game_Panel.Controls.Add(this.button_Box_9);

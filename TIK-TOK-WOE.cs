@@ -7,15 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace TIK_TOK_WOE
 {
     public partial class mainForm : Form
     {
         //Assigning Variables
-
         bool player_Turn;
-
         //instead of using .Enabled for changing text forecolor
         bool enabler1;
         bool enabler2;
@@ -26,52 +23,42 @@ namespace TIK_TOK_WOE
         bool enabler7;
         bool enabler8;
         bool enabler9;
-        
         short add_Score;
         byte draw_Token = 0;
         bool win_Token; //to fix double winning pattern
-
         public mainForm()
         {
             InitializeComponent();
         }
-
         void Win_Condition()
         {
             // XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
             if (button_Box_1.Text == "X" && button_Box_2.Text == "X" && button_Box_3.Text == "X" && win_Token == false)
             {
                 button_Box_1.BackColor = Color.Green;
                 button_Box_2.BackColor = Color.Green;
                 button_Box_3.BackColor = Color.Green;
-
                 MessageBox.Show("Player X is DOMINATING!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
                 button_Box_4.Enabled = false;
                 button_Box_5.Enabled = false;
                 button_Box_6.Enabled = false;
-
                 button_Box_7.Enabled = false;
                 button_Box_8.Enabled = false;
                 button_Box_9.Enabled = false;
-
                 draw_Token = 0;
                 win_Token = true;
                 add_Score = short.Parse(player_X_Score.Text);
                 player_X_Score.Text = Convert.ToString(add_Score + 1);
             }
-
             if (button_Box_4.Text == "X" && button_Box_5.Text == "X" && button_Box_6.Text == "X" && win_Token == false)
             {
                 button_Box_4.BackColor = Color.Green;
                 button_Box_5.BackColor = Color.Green;
                 button_Box_6.BackColor = Color.Green;
-
                 MessageBox.Show("Player X is DOMINATING!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
                 button_Box_1.Enabled = false;
                 button_Box_2.Enabled = false;
                 button_Box_3.Enabled = false;
-
                 button_Box_7.Enabled = false;
                 button_Box_8.Enabled = false;
                 button_Box_9.Enabled = false;
@@ -80,18 +67,15 @@ namespace TIK_TOK_WOE
                 add_Score = short.Parse(player_X_Score.Text);
                 player_X_Score.Text = Convert.ToString(add_Score + 1);
             }
-
             if (button_Box_7.Text == "X" && button_Box_8.Text == "X" && button_Box_9.Text == "X" && win_Token == false)
             {
                 button_Box_7.BackColor = Color.Green;
                 button_Box_8.BackColor = Color.Green;
                 button_Box_9.BackColor = Color.Green;
-
                 MessageBox.Show("Player X is DOMINATING!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
                 button_Box_4.Enabled = false;
                 button_Box_5.Enabled = false;
                 button_Box_6.Enabled = false;
-
                 button_Box_1.Enabled = false;
                 button_Box_2.Enabled = false;
                 button_Box_3.Enabled = false;
@@ -100,18 +84,15 @@ namespace TIK_TOK_WOE
                 add_Score = short.Parse(player_X_Score.Text);
                 player_X_Score.Text = Convert.ToString(add_Score + 1);
             }
-
             if (button_Box_1.Text == "X" && button_Box_4.Text == "X" && button_Box_7.Text == "X" && win_Token == false)
             {
                 button_Box_1.BackColor = Color.Green;
                 button_Box_4.BackColor = Color.Green;
                 button_Box_7.BackColor = Color.Green;
-
                 MessageBox.Show("Player X is DOMINATING!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
                 button_Box_2.Enabled = false;
                 button_Box_5.Enabled = false;
                 button_Box_8.Enabled = false;
-
                 button_Box_3.Enabled = false;
                 button_Box_6.Enabled = false;
                 button_Box_9.Enabled = false;
@@ -120,18 +101,15 @@ namespace TIK_TOK_WOE
                 add_Score = short.Parse(player_X_Score.Text);
                 player_X_Score.Text = Convert.ToString(add_Score + 1);
             }
-
             if (button_Box_2.Text == "X" && button_Box_5.Text == "X" && button_Box_8.Text == "X" && win_Token == false)
             {
                 button_Box_2.BackColor = Color.Green;
                 button_Box_5.BackColor = Color.Green;
                 button_Box_8.BackColor = Color.Green;
-
                 MessageBox.Show("Player X is DOMINATING!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
                 button_Box_1.Enabled = false;
                 button_Box_4.Enabled = false;
                 button_Box_7.Enabled = false;
-
                 button_Box_3.Enabled = false;
                 button_Box_6.Enabled = false;
                 button_Box_9.Enabled = false;
@@ -140,18 +118,15 @@ namespace TIK_TOK_WOE
                 add_Score = short.Parse(player_X_Score.Text);
                 player_X_Score.Text = Convert.ToString(add_Score + 1);
             }
-
             if (button_Box_3.Text == "X" && button_Box_6.Text == "X" && button_Box_9.Text == "X" && win_Token == false)
             {
                 button_Box_3.BackColor = Color.Green;
                 button_Box_6.BackColor = Color.Green;
                 button_Box_9.BackColor = Color.Green;
-
                 MessageBox.Show("Player X is DOMINATING!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
                 button_Box_2.Enabled = false;
                 button_Box_5.Enabled = false;
                 button_Box_8.Enabled = false;
-
                 button_Box_1.Enabled = false;
                 button_Box_4.Enabled = false;
                 button_Box_7.Enabled = false;
@@ -160,18 +135,15 @@ namespace TIK_TOK_WOE
                 add_Score = short.Parse(player_X_Score.Text);
                 player_X_Score.Text = Convert.ToString(add_Score + 1);
             }
-
             if (button_Box_1.Text == "X" && button_Box_5.Text == "X" && button_Box_9.Text == "X" && win_Token == false)
             {
                 button_Box_1.BackColor = Color.Green;
                 button_Box_5.BackColor = Color.Green;
                 button_Box_9.BackColor = Color.Green;
-
                 MessageBox.Show("Player X is DOMINATING!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
                 button_Box_2.Enabled = false;
                 button_Box_3.Enabled = false;
                 button_Box_4.Enabled = false;
-
                 button_Box_6.Enabled = false;
                 button_Box_7.Enabled = false;
                 button_Box_8.Enabled = false;
@@ -180,18 +152,15 @@ namespace TIK_TOK_WOE
                 add_Score = short.Parse(player_X_Score.Text);
                 player_X_Score.Text = Convert.ToString(add_Score + 1);
             }
-
             if (button_Box_3.Text == "X" && button_Box_5.Text == "X" && button_Box_7.Text == "X" && win_Token == false)
             {
                 button_Box_3.BackColor = Color.Green;
                 button_Box_5.BackColor = Color.Green;
                 button_Box_7.BackColor = Color.Green;
-
                 MessageBox.Show("Player X is DOMINATING!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
                 button_Box_2.Enabled = false;
                 button_Box_1.Enabled = false;
                 button_Box_4.Enabled = false;
-
                 button_Box_6.Enabled = false;
                 button_Box_9.Enabled = false;
                 button_Box_8.Enabled = false;
@@ -200,20 +169,16 @@ namespace TIK_TOK_WOE
                 add_Score = short.Parse(player_X_Score.Text);
                 player_X_Score.Text = Convert.ToString(add_Score + 1);
             }
-
             // OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
-
             if (button_Box_1.Text == "O" && button_Box_2.Text == "O" && button_Box_3.Text == "O" && win_Token == false)
             {
                 button_Box_1.BackColor = Color.Red;
                 button_Box_2.BackColor = Color.Red;
                 button_Box_3.BackColor = Color.Red;
-
                 MessageBox.Show("Player O is DOMINATING!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
                 button_Box_4.Enabled = false;
                 button_Box_5.Enabled = false;
                 button_Box_6.Enabled = false;
-
                 button_Box_7.Enabled = false;
                 button_Box_8.Enabled = false;
                 button_Box_9.Enabled = false;
@@ -222,18 +187,15 @@ namespace TIK_TOK_WOE
                 add_Score = short.Parse(player_O_Score.Text);
                 player_O_Score.Text = Convert.ToString(add_Score + 1);
             }
-
             if (button_Box_4.Text == "O" && button_Box_5.Text == "O" && button_Box_6.Text == "O" && win_Token == false)
             {
                 button_Box_4.BackColor = Color.Red;
                 button_Box_5.BackColor = Color.Red;
                 button_Box_6.BackColor = Color.Red;
-
                 MessageBox.Show("Player O is DOMINATING!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
                 button_Box_1.Enabled = false;
                 button_Box_2.Enabled = false;
                 button_Box_3.Enabled = false;
-
                 button_Box_7.Enabled = false;
                 button_Box_8.Enabled = false;
                 button_Box_9.Enabled = false;
@@ -242,18 +204,15 @@ namespace TIK_TOK_WOE
                 add_Score = short.Parse(player_O_Score.Text);
                 player_O_Score.Text = Convert.ToString(add_Score + 1);
             }
-
             if (button_Box_7.Text == "O" && button_Box_8.Text == "O" && button_Box_9.Text == "O" && win_Token == false)
             {
                 button_Box_7.BackColor = Color.Red;
                 button_Box_8.BackColor = Color.Red;
                 button_Box_9.BackColor = Color.Red;
-
                 MessageBox.Show("Player O is DOMINATING!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
                 button_Box_4.Enabled = false;
                 button_Box_5.Enabled = false;
                 button_Box_6.Enabled = false;
-
                 button_Box_1.Enabled = false;
                 button_Box_2.Enabled = false;
                 button_Box_3.Enabled = false;
@@ -262,18 +221,15 @@ namespace TIK_TOK_WOE
                 add_Score = short.Parse(player_O_Score.Text);
                 player_O_Score.Text = Convert.ToString(add_Score + 1);
             }
-
             if (button_Box_1.Text == "O" && button_Box_4.Text == "O" && button_Box_7.Text == "O" && win_Token == false)
             {
                 button_Box_1.BackColor = Color.Red;
                 button_Box_4.BackColor = Color.Red;
                 button_Box_7.BackColor = Color.Red;
-
                 MessageBox.Show("Player O is DOMINATING!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
                 button_Box_2.Enabled = false;
                 button_Box_5.Enabled = false;
                 button_Box_8.Enabled = false;
-
                 button_Box_3.Enabled = false;
                 button_Box_6.Enabled = false;
                 button_Box_9.Enabled = false;
@@ -282,18 +238,15 @@ namespace TIK_TOK_WOE
                 add_Score = short.Parse(player_O_Score.Text);
                 player_O_Score.Text = Convert.ToString(add_Score + 1);
             }
-
             if (button_Box_2.Text == "O" && button_Box_5.Text == "O" && button_Box_8.Text == "O" && win_Token == false)
             {
                 button_Box_2.BackColor = Color.Red;
                 button_Box_5.BackColor = Color.Red;
                 button_Box_8.BackColor = Color.Red;
-
                 MessageBox.Show("Player O is DOMINATING!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
                 button_Box_1.Enabled = false;
                 button_Box_4.Enabled = false;
                 button_Box_7.Enabled = false;
-
                 button_Box_3.Enabled = false;
                 button_Box_6.Enabled = false;
                 button_Box_9.Enabled = false;
@@ -302,18 +255,15 @@ namespace TIK_TOK_WOE
                 add_Score = short.Parse(player_O_Score.Text);
                 player_O_Score.Text = Convert.ToString(add_Score + 1);
             }
-
             if (button_Box_3.Text == "O" && button_Box_6.Text == "O" && button_Box_9.Text == "O" && win_Token == false)
             {
                 button_Box_3.BackColor = Color.Red;
                 button_Box_6.BackColor = Color.Red;
                 button_Box_9.BackColor = Color.Red;
-
                 MessageBox.Show("Player O is DOMINATING!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
                 button_Box_2.Enabled = false;
                 button_Box_5.Enabled = false;
                 button_Box_8.Enabled = false;
-
                 button_Box_1.Enabled = false;
                 button_Box_4.Enabled = false;
                 button_Box_7.Enabled = false;
@@ -322,18 +272,15 @@ namespace TIK_TOK_WOE
                 add_Score = short.Parse(player_O_Score.Text);
                 player_O_Score.Text = Convert.ToString(add_Score + 1);
             }
-
             if (button_Box_1.Text == "O" && button_Box_5.Text == "O" && button_Box_9.Text == "O" && win_Token == false)
             {
                 button_Box_1.BackColor = Color.Red;
                 button_Box_5.BackColor = Color.Red;
                 button_Box_9.BackColor = Color.Red;
-
                 MessageBox.Show("Player O is DOMINATING!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
                 button_Box_2.Enabled = false;
                 button_Box_3.Enabled = false;
                 button_Box_4.Enabled = false;
-
                 button_Box_6.Enabled = false;
                 button_Box_7.Enabled = false;
                 button_Box_8.Enabled = false;
@@ -342,18 +289,15 @@ namespace TIK_TOK_WOE
                 add_Score = short.Parse(player_O_Score.Text);
                 player_O_Score.Text = Convert.ToString(add_Score + 1);
             }
-
             if (button_Box_3.Text == "O" && button_Box_5.Text == "O" && button_Box_7.Text == "O" && win_Token == false)
             {
                 button_Box_3.BackColor = Color.Red;
                 button_Box_5.BackColor = Color.Red;
                 button_Box_7.BackColor = Color.Red;
-
                 MessageBox.Show("Player O is DOMINATING!!", "TIK-TOK-WOE", MessageBoxButtons.OK);
                 button_Box_2.Enabled = false;
                 button_Box_1.Enabled = false;
                 button_Box_4.Enabled = false;
-
                 button_Box_6.Enabled = false;
                 button_Box_9.Enabled = false;
                 button_Box_8.Enabled = false;
@@ -363,7 +307,6 @@ namespace TIK_TOK_WOE
                 player_O_Score.Text = Convert.ToString(add_Score + 1);
             }
         }
-
         void Draw_Condition()
         {
             if (draw_Token == 9)
@@ -379,10 +322,7 @@ namespace TIK_TOK_WOE
                 button_Box_8.Enabled = false;
                 button_Box_9.Enabled = false;
             }
-
         }
-
-
         private void button_Box_1_Click(object sender, EventArgs e)
         {
             if (enabler1 == false)
@@ -404,11 +344,7 @@ namespace TIK_TOK_WOE
                 Draw_Condition();
             }
             enabler1 = true;
-            
-            
-
         }
-
         private void button_Box_2_Click(object sender, EventArgs e)
         {
             if (enabler2 == false)
@@ -431,7 +367,6 @@ namespace TIK_TOK_WOE
             }
             enabler2 = true;
         }
-
         private void button_Box_3_Click(object sender, EventArgs e)
         {
             if (enabler3 == false)
@@ -454,7 +389,6 @@ namespace TIK_TOK_WOE
             }
             enabler3 = true;
         }
-
         private void button_Box_4_Click(object sender, EventArgs e)
         {
             if (enabler4 == false)
@@ -477,7 +411,6 @@ namespace TIK_TOK_WOE
             }
             enabler4 = true;
         }
-
         private void button_Box_5_Click(object sender, EventArgs e)
         {
             if (enabler5 == false)
@@ -500,7 +433,6 @@ namespace TIK_TOK_WOE
             }
             enabler5 = true;
         }
-
         private void button_Box_6_Click(object sender, EventArgs e)
         {
             if (enabler6 == false)
@@ -523,7 +455,6 @@ namespace TIK_TOK_WOE
             }
             enabler6 = true;
         }
-
         private void button_Box_7_Click(object sender, EventArgs e)
         {
             if (enabler7 == false)
@@ -546,7 +477,6 @@ namespace TIK_TOK_WOE
             }
             enabler7 = true;
         }
-
         private void button_Box_8_Click(object sender, EventArgs e)
         {
             if (enabler8 == false)
@@ -569,7 +499,6 @@ namespace TIK_TOK_WOE
             }
             enabler8 = true;
         }
-
         private void button_Box_9_Click(object sender, EventArgs e)
         {
             if (enabler9 == false)
@@ -592,12 +521,10 @@ namespace TIK_TOK_WOE
             }
             enabler9 = true;
         }
-
         private void reset_Button_Click(object sender, EventArgs e)
         {
             draw_Token = 0;
             win_Token = false;
-
             //button text
             button_Box_1.Text = "";
             button_Box_2.Text = "";
@@ -608,7 +535,6 @@ namespace TIK_TOK_WOE
             button_Box_7.Text = "";
             button_Box_8.Text = "";
             button_Box_9.Text = "";
-
             //button enabler
             enabler1 = false;
             enabler2 = false;
@@ -619,7 +545,6 @@ namespace TIK_TOK_WOE
             enabler7 = false;
             enabler8 = false;
             enabler9 = false;
-
             button_Box_1.Enabled = true;
             button_Box_2.Enabled = true;
             button_Box_3.Enabled = true;
@@ -629,9 +554,7 @@ namespace TIK_TOK_WOE
             button_Box_7.Enabled = true;
             button_Box_8.Enabled = true;
             button_Box_9.Enabled = true;
-
             player_Turn = false;
-
             //button background button
             button_Box_1.BackColor = Color.White;
             button_Box_2.BackColor = Color.White;
@@ -643,7 +566,6 @@ namespace TIK_TOK_WOE
             button_Box_8.BackColor = Color.White;
             button_Box_9.BackColor = Color.White;
         }
-
         private void newgame_Button_Click(object sender, EventArgs e)
         {
             DialogResult new_Game_Confirm;
@@ -652,7 +574,6 @@ namespace TIK_TOK_WOE
             {
                 draw_Token = 0;
                 win_Token = false;
-
                 //button text
                 button_Box_1.Text = "";
                 button_Box_2.Text = "";
@@ -663,7 +584,6 @@ namespace TIK_TOK_WOE
                 button_Box_7.Text = "";
                 button_Box_8.Text = "";
                 button_Box_9.Text = "";
-
                 //button enabler
                 enabler1 = false;
                 enabler2 = false;
@@ -674,7 +594,6 @@ namespace TIK_TOK_WOE
                 enabler7 = false;
                 enabler8 = false;
                 enabler9 = false;
-
                 button_Box_1.Enabled = true;
                 button_Box_2.Enabled = true;
                 button_Box_3.Enabled = true;
@@ -684,9 +603,7 @@ namespace TIK_TOK_WOE
                 button_Box_7.Enabled = true;
                 button_Box_8.Enabled = true;
                 button_Box_9.Enabled = true;
-
                 player_Turn = false;
-
                 //button background button
                 button_Box_1.BackColor = Color.White;
                 button_Box_2.BackColor = Color.White;
@@ -697,7 +614,6 @@ namespace TIK_TOK_WOE
                 button_Box_7.BackColor = Color.White;
                 button_Box_8.BackColor = Color.White;
                 button_Box_9.BackColor = Color.White;
-
                 //score reset
                 player_X_Score.Text = "0";
                 player_O_Score.Text = "0";
